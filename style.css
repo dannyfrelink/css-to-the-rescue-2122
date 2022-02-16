@@ -1,3 +1,7 @@
+:root {
+    --measurementFirework: 1em;
+}
+
 *, *::after, *::before {
     margin: 0;
     padding: 0;
@@ -7,9 +11,9 @@ body {
     width: 100vw;
 }
 
-/* body input[type="checkbox"] {
+body input[type="checkbox"] {
     display: none;
-} */
+}
 
 body label {
     display: inline-block;
@@ -33,15 +37,18 @@ body img {
 
 body div:first-of-type {
     position: absolute;
-    left: calc(50% - 0.5em);
-    top: calc(50% - 0.5em);
-    width: 1em;
-    height: 1em;
-    border-radius: 1em;
+    left: calc(50% - var(--measurementFirework) / 2);
+    top: calc(50% - var(--measurementFirework) / 2);
+    width: var(--measurementFirework);
+    height: var(--measurementFirework);
+    border-radius: var(--measurementFirework);
     background-color: red;
-    /* z-index: -1; */
+    z-index: -1;
 }
 
-body input[type="checkbox"]:checked {
-    height: 50px;
+body input[type="checkbox"]:checked ~ div {
+    transform: translate(250px, -100px);
+    transition: 1s;
+    transition-timing-function: ease-out;
 }
+
