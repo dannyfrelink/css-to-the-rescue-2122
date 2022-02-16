@@ -1,0 +1,47 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+}
+
+/* body input[type="checkbox"] {
+    display: none;
+} */
+
+body label {
+    display: inline-block;
+    margin: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #161623;
+    color: white;
+    cursor: pointer;
+}
+
+body label:hover {
+    background-color: blue;
+}
+
+body img {
+    height: 90vh;
+    display: block;
+    margin: auto;
+}
+
+body div:first-of-type {
+    position: absolute;
+    left: calc(50% - 0.5em);
+    top: calc(50% - 0.5em);
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    background-color: red;
+    /* z-index: -1; */
+}
+
+body input[type="checkbox"]:checked {
+    height: 50px;
+}
