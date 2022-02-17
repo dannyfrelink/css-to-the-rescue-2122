@@ -1,5 +1,7 @@
 :root {
     --measurementFirework: 1em;
+    --widthTowerTop: 3.5vmin;
+    --heightTowerTop: 12vmin;
 }
 
 *, *::after, *::before {
@@ -39,9 +41,12 @@ body img {
     margin: auto;
 }
 
+/* Eiffel Tower */
 body>div:first-of-type {
-    height: 45vw;
-    width: 20vw;
+    position: relative;
+    margin: var(--heightTowerTop) auto 0;
+    height: 72vmin;
+    width: 32vmin;
     background-image:
     radial-gradient(ellipse at 10% -200%, transparent 78%,  black 78%),
     radial-gradient(ellipse at 90% -200%, transparent 78%,  black 78%),
@@ -54,6 +59,18 @@ body>div:first-of-type {
     background-repeat: no-repeat;
 }
 
+body>div:first-of-type::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - var(--widthTowerTop) / 2);
+    bottom: 99.8%;
+    height: var(--heightTowerTop);
+    width: var(--widthTowerTop);
+    background-color: black;
+    clip-path: polygon(0% 100%, 45% 0%, 55% 0%, 100% 100%, 0% 100%);
+}
+
+/* Fireworks */
 body>div:last-of-type {
     position: absolute;
     left: calc(50% - var(--measurementFirework) / 2);
@@ -62,10 +79,10 @@ body>div:last-of-type {
     height: var(--measurementFirework);
     border-radius: var(--measurementFirework);
     background-color: red;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
-body input[type="checkbox"]:checked ~ div {
+body input[type="checkbox"]:checked ~ div:last-of-type {
     transform: translate(250px, -50px);
     transition: 0.7s;
     transition-timing-function: ease-out;
