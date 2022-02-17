@@ -47,7 +47,6 @@ body>div:first-of-type {
     radial-gradient(ellipse at 90% -200%, transparent 78%,  black 78%),
     radial-gradient(ellipse at -150% -800%, transparent 85%, black 80% 92%, transparent 92% 100%),
     radial-gradient(ellipse at 250% -800%, transparent 85%, black 80% 92%, transparent 92% 100%),
-    /* radial-gradient(ellipse at top right, transparent 100%, black 15% 70%, transparent 100%), */
     linear-gradient(90deg, transparent 0% 6.5%, black 6.5% 93.5%, transparent 93.5% 100%),
     radial-gradient(circle at bottom, transparent 45%, black 45% 90%, transparent 90%);
     background-size:50% 60%, 50% 60%, 50% 23%, 50% 23%, 100% 6%, 100% 13%;
