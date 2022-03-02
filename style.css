@@ -24,7 +24,7 @@ body label {
     margin: 2em;
     padding: 0.5em;
     border-radius: 0.5em;
-    border: 2px solid #161623;
+    border: 3px solid #161623;
     color: #161623;
     cursor: pointer;
 }
@@ -35,7 +35,7 @@ body label::before {
 
 body label:hover {
     background-color: #161623;
-    border: 2px solid lightgrey;
+    border-color: lightgrey;
     color: lightgrey;
 }
 
@@ -75,14 +75,14 @@ body>div:first-of-type::before {
 }
 
 /* Fireworks */
-body>div:not(:first-of-type) {
+body>div:nth-of-type(n+2) {
     position: absolute;
     left: calc(50% - var(--measurementFirework) / 2);
     top: calc(50% - var(--measurementFirework) / 2);
     z-index: -1;
 }
 
-body>div:not(:first-of-type) div {
+body>div:nth-of-type(n+2) div {
     position: absolute;
     width: var(--measurementFirework);
     height: var(--measurementFirework);
@@ -90,12 +90,12 @@ body>div:not(:first-of-type) div {
     opacity: 0;
 }
 
-body>div:nth-of-type(2) div,
-body>div:nth-of-type(3) div:nth-of-type(2n) {
+body>div:nth-of-type(3) div,
+body>div:nth-of-type(4) div:nth-of-type(2n) {
     background-color: blue;
 }
-body>div:nth-of-type(2) div:nth-of-type(2n),
-body>div:nth-of-type(3) div {
+body>div:nth-of-type(3) div:nth-of-type(2n),
+body>div:nth-of-type(4) div {
     background-color: red;
 }
 
@@ -106,21 +106,21 @@ body input[type="checkbox"]:checked ~ div div {
     animation-iteration-count: infinite;
 }
 
-body input[type="checkbox"]:checked ~ div:nth-of-type(2) div:first-of-type {
+body input[type="checkbox"]:checked ~ div:nth-of-type(3) div:first-of-type {
     transform: translate(-397px, 286px);
     animation-duration: 3.6s;
     animation-delay: 
         4s,
         3s;
 }
-body input[type="checkbox"]:checked ~ div:nth-of-type(2) div:nth-of-type(2) {
+body input[type="checkbox"]:checked ~ div:nth-of-type(3) div:nth-of-type(2) {
     transform: translate(-422px, 12px);
     animation-duration: 2.3s;
     animation-delay: 
         1.2s,
         0.5s;
 }
-body input[type="checkbox"]:checked ~ div:nth-of-type(2) div:last-of-type {
+body input[type="checkbox"]:checked ~ div:nth-of-type(3) div:last-of-type {
     transform: translate(-285px, -211px);
     animation-duration: 4.1s;
     animation-delay: 
@@ -128,21 +128,21 @@ body input[type="checkbox"]:checked ~ div:nth-of-type(2) div:last-of-type {
         2.6s;
 }
 
-body input[type="checkbox"]:checked ~ div:nth-of-type(3) div:first-of-type {
+body input[type="checkbox"]:checked ~ div:nth-of-type(4) div:first-of-type {
     transform: translate(397px, 286px);
     animation-duration: 2.8s;
     animation-delay: 
         5s,
         4.1s;
 } 
-body input[type="checkbox"]:checked ~ div:nth-of-type(3) div:nth-of-type(2) {
+body input[type="checkbox"]:checked ~ div:nth-of-type(4) div:nth-of-type(2) {
     transform: translate(422px, 12px);
     animation-duration: 1.8s;
     animation-delay: 
         3.4s,
         2.8s;
 }
-body input[type="checkbox"]:checked ~ div:nth-of-type(3) div:last-of-type {
+body input[type="checkbox"]:checked ~ div:nth-of-type(4) div:last-of-type {
     transform: translate(285px, -211px);
     animation-duration: 4.6s;
     animation-delay: 
@@ -187,12 +187,12 @@ body input[type="checkbox"]:checked ~ label::before {
 
     body label {
         color: lightgrey;
-        border: 2px solid lightgrey;
+        border: 3px solid lightgrey;
     }
     body label:hover {
         background-color: lightgrey;
         color: #161623;
-        border: 2px solid #161623;
+        border-color: #161623;
     }
     
     body>div:first-of-type {
