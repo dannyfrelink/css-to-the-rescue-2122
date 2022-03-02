@@ -57,23 +57,41 @@ body>div:first-of-type {
     width: 100vw;
     z-index: -1;
     background-image: 
-    radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-    linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-    linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-    radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-    linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-    linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-    radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-    linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-    linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%);
+        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+        linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+        linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+        linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+
+        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+        linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+        linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+        linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%);
     background-size:
+        5.65em 5.65em, 5em 5em, 0.8em 3.5em,
+        5.65em 5.65em, 5em 5em, 0.8em 3.5em,
+        5.65em 5.65em, 5em 5em, 0.8em 3.5em,
+
         5.65em 5.65em, 5em 5em, 0.8em 3.5em,
         5.65em 5.65em, 5em 5em, 0.8em 3.5em,
         5.65em 5.65em, 5em 5em, 0.8em 3.5em;
     background-position: 
         36.47% 77.05%, 36.5% 76.5%, calc(36.5% + 0.55em) calc(76.5% + 3.85em),
         29.9% 80.5%, 30% 80%, calc(30% + 0.85em) calc(80% + 3.8em),
-        23.33% 83.95%, 23.5% 83.5%, calc(23.5% + 1.15em) calc(83.5% + 3.75em);
+        23.33% 83.95%, 23.5% 83.5%, calc(23.5% + 1.15em) calc(83.5% + 3.75em),
+
+        63.59% 76.9%, 63.5% 76.5%, 63% calc(76.5% + 3.85em),
+        70.1% 80.5%, 70% 80%, 69.25% calc(80% + 3.8em),
+        76.7% 83.95%, 76.5% 83.5%, 75.48% calc(83.5% + 3.75em);
     background-repeat: no-repeat;
 }
 
@@ -233,10 +251,20 @@ body input[type="checkbox"]:checked ~ label::before {
             linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
             linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
             radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
-            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
             linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
             radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
             linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
             linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%);
     }
     
