@@ -1,5 +1,5 @@
 :root {
-    --measurementFirework: 1em;
+    --measurementFirework: 2vmin;
     --widthTowerTop: 3.5vmin;
     --heightTowerTop: 12vmin;
     --boxShadowFirework: -120px -18.66667px blue, 48px -16.66667px #00ff84, 190px 16.33333px #002bff, -113px 108.66667px #ff009d, -109px 87.66667px #ffb300, -50px -113.66667px #ff006e, 26px -31.66667px #ff4000, 180px -151.66667px #ff00d0, -12px -138.66667px #00f6ff, 20px 188.66667px #99ff00, -69px -27.66667px #ff0400, -111px -139.66667px #6200ff, 155px -37.66667px #00ddff, -152px -180.66667px #00ffd0, -50px -37.66667px #00ffdd, -95px -175.66667px #a6ff00, -88px 10.33333px #0d00ff, 112px -109.66667px #005eff, 69px -215.66667px #ff00a6, 168px 100.66667px #ff004c, -44px 24.33333px #ff6600, 97px 125.66667px #ff0066, -11px -102.66667px #00ffa2, 36px -126.66667px #b700ff, 140px -196.66667px #9000ff, 125px 175.66667px #00bbff, 118px -181.66667px #ff002f, 144px -111.66667px #ffae00, 36px -78.66667px #f600ff, -63px -196.66667px #c800ff, -18px -27.66667px #d4ff00, -134px -177.66667px #ea00ff, -36px -212.66667px #ff00d4, 9px 106.66667px #00fff2, 91px -78.66667px #000dff, -22px -191.66667px #9dff00, 139px -192.66667px #a6ff00, 56px 2.66667px #0099ff, -156px -76.66667px #ea00ff, -163px -33.66667px #00fffb, -138px -146.66667px #00ff73, 62px 163.66667px #0088ff, 44px -170.66667px #0062ff, 24px -142.66667px #b300ff, 141px -8.66667px #9000ff, 11px 85.66667px #ff6600, 181px 128.66667px #1e00ff, 90px -123.66667px #c800ff, 189px 70.33333px #00ffc8, -44px -163.66667px #00ff33, 100px -6.66667px #ff008c;
@@ -12,6 +12,7 @@
 
 body {
     width: 100vw;
+    background-color: lightgrey;
 }
 
 body input[type="checkbox"] {
@@ -23,8 +24,8 @@ body label {
     margin: 2em;
     padding: 0.5em;
     border-radius: 0.5em;
-    background-color: #161623;
-    color: white;
+    border: 2px solid #161623;
+    color: #161623;
     cursor: pointer;
 }
 
@@ -33,7 +34,9 @@ body label::before {
 }
 
 body label:hover {
-    background-color: blue;
+    background-color: #161623;
+    border: 2px solid lightgrey;
+    color: lightgrey;
 }
 
 body img {
@@ -49,12 +52,12 @@ body>div:first-of-type {
     height: 72vmin;
     width: 32vmin;
     background-image:
-    radial-gradient(ellipse at 10% -200%, transparent 78%,  black 78%),
-    radial-gradient(ellipse at 90% -200%, transparent 78%,  black 78%),
-    radial-gradient(ellipse at -150% -800%, transparent 85%, black 80% 92%, transparent 92% 100%),
-    radial-gradient(ellipse at 250% -800%, transparent 85%, black 80% 92%, transparent 92% 100%),
-    linear-gradient(90deg, transparent 0% 6.5%, black 6.5% 93.5%, transparent 93.5% 100%),
-    radial-gradient(circle at bottom, transparent 45%, black 45% 90%, transparent 90%);
+    radial-gradient(ellipse at 10% -200%, transparent 78%,  #161623 78%),
+    radial-gradient(ellipse at 90% -200%, transparent 78%,  #161623 78%),
+    radial-gradient(ellipse at -150% -800%, transparent 85%, #161623 80% 92%, transparent 92% 100%),
+    radial-gradient(ellipse at 250% -800%, transparent 85%, #161623 80% 92%, transparent 92% 100%),
+    linear-gradient(90deg, transparent 0% 6.5%, #161623 6.5% 93.5%, transparent 93.5% 100%),
+    radial-gradient(circle at bottom, transparent 45%, #161623 45% 90%, transparent 90%);
     background-size:50% 60%, 50% 60%, 50% 23%, 50% 23%, 100% 6%, 100% 13%;
     background-position:top left, top right, 0% 77.5%, 100% 77.5%, 0% 86.5%, bottom;
     background-repeat: no-repeat;
@@ -67,7 +70,7 @@ body>div:first-of-type::before {
     bottom: 99.8%;
     height: var(--heightTowerTop);
     width: var(--widthTowerTop);
-    background-color: black;
+    background-color: #161623;
     clip-path: polygon(0% 100%, 45% 0%, 55% 0%, 100% 100%, 0% 100%);
 }
 
@@ -84,6 +87,7 @@ body>div:not(:first-of-type) div {
     width: var(--measurementFirework);
     height: var(--measurementFirework);
     border-radius: var(--measurementFirework);
+    opacity: 0;
 }
 
 body>div:nth-of-type(2) div,
@@ -96,7 +100,6 @@ body>div:nth-of-type(3) div {
 }
 
 body input[type="checkbox"]:checked ~ div div {
-    opacity: 0;
     animation-name: 
         bang,
         transformBack;
@@ -177,4 +180,32 @@ body input[type="checkbox"]:checked ~ label::before {
     content: 'Stop Fireworks';
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #161623;
+    }
 
+    body label {
+        color: lightgrey;
+        border: 2px solid lightgrey;
+    }
+    body label:hover {
+        background-color: lightgrey;
+        color: #161623;
+        border: 2px solid #161623;
+    }
+    
+    body>div:first-of-type {
+        background-image:
+        radial-gradient(ellipse at 10% -200%, transparent 78%,  lightgrey 78%),
+        radial-gradient(ellipse at 90% -200%, transparent 78%,  lightgrey 78%),
+        radial-gradient(ellipse at -150% -800%, transparent 85%, lightgrey 80% 92%, transparent 92% 100%),
+        radial-gradient(ellipse at 250% -800%, transparent 85%, lightgrey 80% 92%, transparent 92% 100%),
+        linear-gradient(90deg, transparent 0% 6.5%, lightgrey 6.5% 93.5%, transparent 93.5% 100%),
+        radial-gradient(circle at bottom, transparent 45%, lightgrey 45% 90%, transparent 90%);
+    }
+
+    body>div:first-of-type::before {
+        background-color: lightgray;
+    }
+}
