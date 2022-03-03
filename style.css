@@ -56,42 +56,32 @@ body>div:first-of-type {
     height: 100vh;
     width: 100vw;
     z-index: -1;
-    background-image: 
-        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-        linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-        linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-        linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-
-        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-        linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-        linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-        radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
-        linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-        linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%);
     background-size:
-        5.65em 5.65em, 5em 5em, 0.8em 3.5em,
-        5.65em 5.65em, 5em 5em, 0.8em 3.5em,
+        /* Trees left */
+        5.65em 5.65em, 5em 5em, 0.8em 8.5em,
+        5.65em 5.65em, 5em 5em, 0.8em 6em,
         5.65em 5.65em, 5em 5em, 0.8em 3.5em,
 
+        /* Trees right */
+        5.65em 5.65em, 5em 5em, 0.8em 8.5em,
+        5.65em 5.65em, 5em 5em, 0.8em 6em,
         5.65em 5.65em, 5em 5em, 0.8em 3.5em,
-        5.65em 5.65em, 5em 5em, 0.8em 3.5em,
-        5.65em 5.65em, 5em 5em, 0.8em 3.5em;
+        
+        /* Grass and path */
+        100% 14.4%;
     background-position: 
-        36.47% 77.05%, 36.5% 76.5%, calc(36.5% + 0.55em) calc(76.5% + 3.85em),
-        29.9% 80.5%, 30% 80%, calc(30% + 0.85em) calc(80% + 3.8em),
+        /* Trees left */
+        36.415% 76.79%, 36.5% 76.5%, calc(36.5% + 0.5em) calc(76.5% + 6.8em),
+        29.9% 80.5%, 30% 80%, calc(30% + 0.85em) calc(80% + 5.375em),
         23.33% 83.95%, 23.5% 83.5%, calc(23.5% + 1.15em) calc(83.5% + 3.75em),
 
-        63.59% 76.9%, 63.5% 76.5%, 63% calc(76.5% + 3.85em),
-        70.1% 80.5%, 70% 80%, 69.25% calc(80% + 3.8em),
-        76.7% 83.95%, 76.5% 83.5%, 75.48% calc(83.5% + 3.75em);
+        /* Trees right */        
+        63.59% 76.9%, 63.5% 76.5%, 62.95% calc(76.5% + 6.8em),
+        70.1% 80.5%, 70% 80%, 69.2% calc(80% + 5.375em),
+        76.7% 83.95%, 76.5% 83.5%, 75.43% calc(83.5% + 3.75em),
+
+        /* Grass and path */
+        bottom left;
     background-repeat: no-repeat;
 }
 
@@ -244,29 +234,6 @@ body input[type="checkbox"]:checked ~ label::before {
         color: var(--backgroundDarkMode);
         border-color: var(--backgroundDarkMode);
     }
-
-    body>div:first-of-type {
-        background-image: 
-            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
-            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
-            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
-            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-            
-            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
-            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
-            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
-            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
-            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
-            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%);
-    }
     
     body>div:nth-of-type(2) {
         background-image:
@@ -280,5 +247,66 @@ body input[type="checkbox"]:checked ~ label::before {
 
     body>div:nth-of-type(2)::before {
         background-color: var(--backgroundLightMode);
+    }
+}
+
+@media (min-width: 1389px) and (prefers-color-scheme: dark) {
+    body>div:first-of-type {
+        background-image: 
+            /* Trees left */
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            
+            /* Trees right */
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundDarkMode) 75% 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            
+            /* Grass and path */
+            linear-gradient(90deg, #06a94d 0% 45%, grey 45% 55%, #06a94d 55% 100%);
+    }
+}
+
+@media (min-width: 1389px) and (prefers-color-scheme: light) {
+    /* Background */
+    body>div:first-of-type {
+        background-image: 
+            /* Trees left */
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+
+            /* Trees right */
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+            linear-gradient(45deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            radial-gradient(circle at center, transparent 75%,  var(--backgroundLightMode) 75% 100%),
+            linear-gradient(135deg, #08f26e 0%, #06a94d 20% 80%, #08f26e 100%),
+            linear-gradient(0deg, rgba(195,131,77,1) 35%, rgba(171,115,67,1) 100%),
+            
+            /* Grass and path */
+            linear-gradient(90deg, #06a94d 0% 45%, grey 45% 55%, #06a94d 55% 100%);
     }
 }
