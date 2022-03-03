@@ -17,7 +17,7 @@ At first I wasn't really sure what I wanted to do for my firework show. Especial
 
 ## ⚙️ Process (Wiki)
 
-You can find all the progression of my work documented in my [Wiki](https://github.com/dannyfrelink/firework-show/wiki).
+You can find all the progression of my work documented in my [Wiki](https://github.com/dannyfrelink/firework-show/wiki/Progression).
 
 ## 🔧 Installation
 
