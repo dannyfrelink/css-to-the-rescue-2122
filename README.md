@@ -13,7 +13,8 @@ A little fun in creating a firework show arround the Eiffel tower (using only HT
 
 At first I wasn't really sure what I wanted to do for my firework show. Especially what kind of scenery I wanted around the show. Eventually, I came up with the idea to do a full on firework show around a place of interest. As my place of interest, I chose the Eiffel tower. I wanted it to look like the firework would shoot out of the tower and explode somewhere in the air. As an extra, I added fireworks in the shape of a baguette with the colours of the French flag as an extra firework option.
 
-![Concept picture](https://github.com/dannyfrelink/firework-show/blob/main/images/progression-wiki4.png)
+![Normal Fireworks](https://github.com/dannyfrelink/firework-show/blob/main/images/progression-wiki5.png)
+![Baguette Fireworks](https://github.com/dannyfrelink/firework-show/blob/main/images/progression-wiki6.png)
 
 ## ⚙️ Process (Wiki)
 
