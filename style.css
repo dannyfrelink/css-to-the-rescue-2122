@@ -153,6 +153,10 @@ body input[type="checkbox"]:first-of-type:checked ~ label:last-of-type {
     display: inline-block;
 }
 
+body input[type="checkbox"]:first-of-type:not(:checked) ~ div div {
+    animation: none !important;
+}
+
 body input[type="checkbox"]:checked ~ div div {
     animation-name: 
         bang,
